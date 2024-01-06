@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a class="my-logo" href="#">My logo</a>
+            <a class="hideonmobile" href="#">About</a>
+            <a class="hideonmobile" href="#">services</a>
+            <a class="hideonmobile" href="#">Openings</a>
+            <a class="hideonmobile" href="#">Contact</a>
+            <a onclick="sidebarOpen()"  class="menu-img" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </ul>
+        <ul class="side-bar">
+            <a onclick="sidebarClose()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a class="my-logo" href="#">My logo</a>
+            <a href="#">About</a>
+            <a href="#">services</a>
+            <a href="#">Openings</a>
+            <a href="#">Contact</a>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+    </div>
+
+    <script>
+        function sidebarOpen(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'flex'
+        }
+
+        function sidebarClose(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'none'
+        }
+
+
+    </script>
+</body>
+</html>
